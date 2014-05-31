@@ -1,7 +1,7 @@
 ungit-gitsvn
 ============
 
-This is a small plugin for [ungit](https://github.com/FredrikNoren/ungit) that enables the use of "git svn".
+This is a small plugin for [ungit](https://github.com/FredrikNoren/ungit) that enables the use of ```git svn```.
 
 Currently only ```git svn rebase``` and ```git svn dcommit``` are supported.
 
