@@ -1,0 +1,36 @@
+<div class="gitIntegration panel panel-default" data-bind="visible: show">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <button class="btn btn-primary" data-bind="click: svnRebase, disable: rebaseDisabled">
+                    rebase
+                    <!-- ko component: rebaseProgressBar --><!-- /ko -->
+                </button>
+            </div>
+            <div class="col-lg-6">
+                <button class="btn btn-primary" data-bind="click: svnCommit, disable: commitDisabled">
+                    commit
+                    <!-- ko component: commitProgressBar --><!-- /ko -->
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <center>
+            <div data-bind="click: function() { showPasswordField(!showPasswordField()) }">-----</div>
+            </center>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <form class="form-inline" data-bind="submit: login, visible: showPasswordField" role="form">
+                    <div class="form-group">
+                        <label class="sr-only" for="svnPassword">Password</label>
+                        <input type="password" class="form-control" id="password"
+                            placeholder="Password" data-bind="value: svnPassword"
+                            data-ta-clickable="submit">
+                    </div>
+                        <!-- <button type="submit" class="btn btn-primary" data-ta-clickable="submit">set</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{
+    "name": "gitsvn",
+    "server": "backend.js",
+    "disabled": false,
+    "exports": {
+        "javascript": [
+            "components/gitsvn/gitsvn.js",
+            "components/remotes/remotes.js"
+        ],
+    "knockoutTemplates": {
+        "gitsvn": "components/gitsvn/gitsvn.html"
+    }
+    }
+}
